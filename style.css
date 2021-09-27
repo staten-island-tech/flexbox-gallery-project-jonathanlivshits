@@ -1,0 +1,24 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+h2 {
+  font-size: 5rem;
+}
+.body {
+  font-size: 5rem;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-evenly;
+  font-family: "Ubuntu", sans-serif;
+}
+.subheader {
+  border: 1px solid #979597;
+  width: 28%;
+  text-align: center;
+}
