@@ -7,18 +7,62 @@ body,
   font-size: 100%;
 }
 
-h2 {
-  font-size: 5rem;
-}
-.body {
-  font-size: 5rem;
-  display: flex;
-  margin-top: 5rem;
-  justify-content: space-evenly;
-  font-family: "Ubuntu", sans-serif;
-}
 .subheader {
   border: 1px solid #979597;
   width: 28%;
+  height: 20vw;
+  box-shadow: 10px 5px 5px red;
+}
+
+.column-sub {
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
+  margin-top: 1rem;
+  display: flex;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 1rem auto;
+}
+
+.body {
+  font-family: "Ubuntu", sans-serif;
+}
+.outline {
+  text-align: center;
+  background-color: #080808;
+  color: #afafaf;
+  width: 50rem;
+  padding: 25px 20px;
+  margin: 2rem auto;
+  border: 0.5rem solid #f6f6f6;
+}
+.column-head {
+  font-size: 2rem;
+  justify-content: space-evenly;
+  display: flex;
+}
+.column-desc {
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  display: flex;
+}
+.column-author {
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  display: flex;
+}
+.column-link {
+  font-size: 1rem;
+  justify-content: space-evenly;
+  display: flex;
+}
+#column-image-one {
+  background-image: url(images/image_edgar.jpg);
 }
