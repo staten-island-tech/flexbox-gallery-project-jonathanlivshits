@@ -4,65 +4,83 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 100%;
-}
-
-.subheader {
-  border: 1px solid #979597;
-  width: 28%;
-  height: 20vw;
-  box-shadow: 10px 5px 5px red;
-}
-
-.column-sub {
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  margin-top: 1rem;
-  display: flex;
-}
-
-h2 {
-  font-family: "Ubuntu", sans-serif;
-
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 1rem;
-  padding: 1rem auto;
+  font-size: 90%;
 }
 
 .body {
   font-family: "Ubuntu", sans-serif;
 }
-.outline {
+.header {
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 3rem;
+  font-size: 3rem;
   text-align: center;
-  background-color: #080808;
+}
+.overhead {
+  display: flex;
+}
+.overhead-two {
+  display: flex;
+}
+.overhead-three {
+  display: flex;
+}
+.outline {
+  font-family: "Ubuntu", sans-serif;
+  justify-content: space-around;
+  border: 2px solid #afafaf;
+  text-align: center;
+  background-color: #020202;
   color: #afafaf;
-  width: 50rem;
+  width: 42rem;
   padding: 25px 20px;
   margin: 2rem auto;
-  border: 0.5rem solid #f6f6f6;
+  box-shadow: 1em 1rem 1rem #afafaf;
 }
 .column-head {
   font-size: 2rem;
-  justify-content: space-evenly;
-  display: flex;
 }
-.column-desc {
-  font-size: 1.2rem;
-  justify-content: space-evenly;
-  display: flex;
-}
+
 .column-author {
   font-size: 1.2rem;
-  justify-content: space-evenly;
-  display: flex;
+  margin-top: 2rem;
 }
 .column-link {
-  font-size: 1rem;
-  justify-content: space-evenly;
-  display: flex;
+  font-size: 1.1rem;
 }
+.column-image {
+  background-position: center;
+  margin-top: 1rem;
+  background-size: 100%;
+  height: 50vh;
+  color: #afafaf;
+  border: 0.4rem solid #303030;
+}
+
 #column-image-one {
   background-image: url(images/image_edgar.jpg);
+}
+#column-image-two {
+  background-image: url(images/image_mark.jpg);
+}
+#column-image-three {
+  background-image: url(images/image_william.jpg);
+}
+#column-image-four {
+  background-image: url(images/image_charles.jpg);
+}
+#column-image-five {
+  background-image: url(images/image_lewis.png);
+}
+#column-image-six {
+  background-image: url(images/images_rowling.jpg);
+}
+#column-image-seven {
+  background-image: url(images/image_hemingway.jpg);
+}
+#column-image-eight {
+  background-image: url(images/image_virginia.jpg);
+}
+#column-image-nine {
+  background-image: url(images/image_fitzgerald.jpg);
 }
