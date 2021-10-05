@@ -55,6 +55,7 @@ body,
   height: 50vh;
   color: #afafaf;
   border: 0.4rem solid #303030;
+  animation: test 2s;
 }
 
 #column-image-one {
@@ -92,10 +93,48 @@ body,
 .button:hover {
   transform: scale(1.2);
   transition: margin-right 2s ease-in;
+  filter: brightness(150%);
+  filter: hue-rotate(90deg);
 }
 .column-image:hover {
   transition: margin-right 2s ease-in;
   outline: 1 rem solid #303030;
   transform: scale(1.05);
   opacity: 75%;
+}
+
+@keyframes test {
+  0% {
+    opacity: 0%;
+  }
+  10% {
+    opacity: 10%;
+  }
+  20% {
+    opacity: 20%;
+  }
+  30% {
+    opacity: 30%;
+  }
+  40% {
+    opacity: 40%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  60% {
+    opacity: 60%;
+  }
+  70% {
+    opacity: 70%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  90% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
