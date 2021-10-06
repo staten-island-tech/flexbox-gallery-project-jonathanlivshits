@@ -36,6 +36,11 @@ body,
   padding: 25px 20px;
   margin: 2rem auto;
   box-shadow: 1em 1rem 1rem #afafaf;
+  transition: all 0.5s;
+  animation: opening 15s;
+}
+.outline:hover {
+  transform: scale(1.08);
 }
 .column-head {
   font-size: 2rem;
@@ -55,7 +60,7 @@ body,
   height: 50vh;
   color: #afafaf;
   border: 0.4rem solid #303030;
-  animation: test 2s;
+  animation: opacity 36s;
 }
 
 #column-image-one {
@@ -91,50 +96,54 @@ body,
   background-color: #dbdbdb;
 }
 .button:hover {
+  background-color: rgb(255, 255, 255);
   transform: scale(1.2);
   transition: margin-right 2s ease-in;
+  transition: background-color 2s;
   filter: brightness(150%);
   filter: hue-rotate(90deg);
 }
-.column-image:hover {
-  transition: margin-right 2s ease-in;
-  outline: 1 rem solid #303030;
-  transform: scale(1.05);
-  opacity: 75%;
-}
 
-@keyframes test {
+@keyframes opacity {
   0% {
     opacity: 0%;
   }
-  10% {
-    opacity: 10%;
+}
+.animation {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  animation: loading 10s;
+}
+@keyframes opening {
+  0% {
+    opacity: 0%;
   }
-  20% {
-    opacity: 20%;
+}
+@keyframes loading {
+  0% {
+    left: 50%;
+    bottom: 10%;
+    background-color: blueviolet;
   }
-  30% {
-    opacity: 30%;
-  }
-  40% {
-    opacity: 40%;
+  25% {
+    left: 50%;
+    bottom: 20%;
+    background-color: rgb(55, 43, 226);
   }
   50% {
-    opacity: 50%;
+    left: 55%;
+    bottom: 20%;
+    background-color: rgb(43, 174, 226);
   }
-  60% {
-    opacity: 60%;
-  }
-  70% {
-    opacity: 70%;
-  }
-  80% {
-    opacity: 80%;
-  }
-  90% {
-    opacity: 90%;
+  75% {
+    left: 55%;
+    bottom: 10%;
+    background-color: rgb(43, 226, 119);
   }
   100% {
-    opacity: 100%;
+    left: 50%;
+    bottom: 10%;
+    background-color: rgb(162, 226, 43);
   }
 }
