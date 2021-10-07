@@ -36,14 +36,13 @@ body,
   padding: 25px 20px;
   margin: 2rem auto;
   box-shadow: 1em 1rem 1rem #afafaf;
-  transition: all 0.5s;
-  animation: opening 15s;
 }
 .outline:hover {
   transform: scale(1.08);
 }
 .column-head {
   font-size: 2rem;
+  animation: scale 10s;
 }
 
 .column-author {
@@ -60,7 +59,7 @@ body,
   height: 50vh;
   color: #afafaf;
   border: 0.4rem solid #303030;
-  animation: opacity 36s;
+  animation: opacity 10s;
 }
 
 #column-image-one {
@@ -103,47 +102,11 @@ body,
   filter: brightness(150%);
   filter: hue-rotate(90deg);
 }
-
+.column-head:hover {
+  transform: scale(1.2, 1);
+}
 @keyframes opacity {
   0% {
     opacity: 0%;
-  }
-}
-.animation {
-  height: 2rem;
-  width: 2rem;
-  position: absolute;
-  animation: loading 10s;
-}
-@keyframes opening {
-  0% {
-    opacity: 0%;
-  }
-}
-@keyframes loading {
-  0% {
-    left: 50%;
-    bottom: 10%;
-    background-color: blueviolet;
-  }
-  25% {
-    left: 50%;
-    bottom: 20%;
-    background-color: rgb(55, 43, 226);
-  }
-  50% {
-    left: 55%;
-    bottom: 20%;
-    background-color: rgb(43, 174, 226);
-  }
-  75% {
-    left: 55%;
-    bottom: 10%;
-    background-color: rgb(43, 226, 119);
-  }
-  100% {
-    left: 50%;
-    bottom: 10%;
-    background-color: rgb(162, 226, 43);
   }
 }
