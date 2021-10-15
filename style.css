@@ -1,136 +1,165 @@
 html,
 body,
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-size: 90%;
+  font-size: 62.5%;
 }
 
-.body {
-  font-family: "Ubuntu", sans-serif;
-}
-.header {
+.head {
   font-family: "Ubuntu", sans-serif;
   padding-top: 3rem;
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
 }
+
 .overhead {
   display: flex;
-}
-.overhead-two {
-  display: flex;
-}
-.overhead-three {
-  display: flex;
-}
-.outline {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 85vw;
+  margin: 1rem auto;
+  background-color: rgb(244, 252, 244);
   font-family: "Ubuntu", sans-serif;
-  justify-content: space-around;
-  border: 2px solid #afafaf;
+}
+
+.subhead {
+  box-shadow: 0.4rem 0.4rem 0.4rem rgb(110, 110, 110);
+  background-color: rgb(186, 227, 253);
+  border: 0.5rem solid #693232;
   text-align: center;
-  background-color: #020202;
-  color: #afafaf;
-  width: 42rem;
-  padding: 25px 20px;
-  margin: 2rem auto;
-  box-shadow: 1em 1rem 1rem #afafaf;
-}
-.outline:hover {
-  transform: scale(1.08);
-}
-.column-head {
-  font-size: 2rem;
-  animation: scale 10s;
+  height: 65rem;
+  width: 29%;
+  margin: 2.5rem;
+  border-radius: 4%;
 }
 
-.column-author {
-  font-size: 1.2rem;
-  margin-top: 2rem;
+.subhead:hover {
+  transform: scale(1.05);
 }
-.column-link {
-  font-size: 1.1rem;
-}
-.column-image {
+
+.sub-image {
+  animation: opening-animation 10s;
   background-position: center;
-  margin-top: 1rem;
   background-size: 100%;
-  height: 50vh;
-  color: #afafaf;
-  border: 0.4rem solid #303030;
-  animation: opacity 10s;
+  margin: 1rem auto;
+  height: 60%;
+  width: 84%;
 }
 
-#column-image-one {
-  background-image: url(images/image_edgar.jpg);
-}
-#column-image-two {
-  background-image: url(images/image_mark.jpg);
-}
-#column-image-three {
-  background-image: url(images/image_william.jpg);
-}
-#column-image-four {
-  background-image: url(images/image_charles.jpg);
-}
-#column-image-five {
-  background-image: url(images/image_lewis.png);
-}
-#column-image-six {
-  background-image: url(images/images_rowling.jpg);
-}
-#column-image-seven {
-  background-image: url(images/image_hemingway.jpg);
-}
-#column-image-eight {
-  background-image: url(images/image_virginia.jpg);
-}
-#column-image-nine {
-  background-image: url(images/image_fitzgerald.jpg);
+.sub-header {
+  text-align: center;
+  margin: 0.8rem auto;
+  font-size: 2rem;
 }
 
-.button {
+.sub-description {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+.sub-link {
+  margin: 0.6rem auto;
+  font-size: 1.5rem;
+}
+
+.sub-button {
+  border-radius: 8%;
+  border: 0.3rem solid honeydew;
+  background-color: honeydew;
   transition: all 0.5s;
-  background-color: #dbdbdb;
 }
-.button:hover {
-  background-color: rgb(255, 255, 255);
+
+#sub-button-1:hover {
+  background-color: #ffffff;
   transform: scale(1.2);
   transition: margin-right 2s ease-in;
-  transition: background-color 2s;
   filter: brightness(150%);
   filter: hue-rotate(90deg);
 }
-.column-head:hover {
-  transform: scale(1.2, 1);
+
+#sub-button-2:hover {
+  background-color: #ffffff;
+  transform: scale(1.2);
+  transition: margin-right 2s ease-in;
+  filter: brightness(150%);
+  filter: hue-rotate(90deg);
 }
-@keyframes opacity {
+
+#sub-button-3:hover {
+  background-color: #ffffff;
+  transform: scale(1.2);
+  transition: margin-right 2s ease-in;
+  filter: brightness(150%);
+  filter: hue-rotate(90deg);
+}
+
+#sub-button-4:hover {
+  background-color: #ffffff;
+  transform: scale(1.2);
+  transition: margin-right 2s ease-in;
+  filter: brightness(150%);
+  filter: hue-rotate(90deg);
+}
+
+#sub-button-5:hover {
+  background-color: #ffffff;
+  transform: scale(1.2);
+  transition: margin-right 2s ease-in;
+  filter: brightness(150%);
+  filter: hue-rotate(90deg);
+}
+
+@keyframes opening-animation {
   0% {
-    opacity: 0%;
+    opacity: 10%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .outline {
+  .subhead {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .outline {
+  .subhead {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .outline {
+  .subhead {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .outline {
-    width: 100%;
-  }
+#sub-image-1 {
+  background-image: url(photos/images_alex.png);
+}
+#sub-image-2 {
+  background-image: url(photos/images_gil.png);
+}
+#sub-image-3 {
+  background-image: url(photos/images_gus.png);
+}
+#sub-image-4 {
+  background-image: url(photos/images_haley.png);
+}
+#sub-image-5 {
+  background-image: url(photos/images_harvey.png);
+}
+#sub-image-6 {
+  background-image: url(photos/images_krobus.png);
+}
+#sub-image-7 {
+  background-image: url(photos/images_leah.png);
+}
+#sub-image-8 {
+  background-image: url(photos/images_maru.png);
+}
+#sub-image-9 {
+  background-image: url(photos/images_robin.png);
 }
