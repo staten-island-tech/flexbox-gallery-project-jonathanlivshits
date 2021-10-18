@@ -41,6 +41,7 @@ body,
 .sub-image {
   animation: opening-animation 10s;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   margin: 1rem auto;
   height: 60%;
