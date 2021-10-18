@@ -28,7 +28,7 @@ body,
   background-color: rgb(186, 227, 253);
   border: 0.5rem solid #693232;
   text-align: center;
-  height: 65rem;
+  height: auto;
   width: 29%;
   margin: 2.5rem;
   border-radius: 4%;
