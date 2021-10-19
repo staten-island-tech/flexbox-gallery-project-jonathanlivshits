@@ -18,7 +18,7 @@ body,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 85vw;
+  width: 90vw;
   margin: 1rem auto;
   background-color: rgb(244, 252, 244);
 }
@@ -28,9 +28,9 @@ body,
   background-color: rgb(186, 227, 253);
   border: 0.5rem solid #693232;
   text-align: center;
-  height: auto;
-  width: 29%;
-  margin: 2.5rem;
+  height: 70rem;
+  width: 30%;
+  margin: 2rem;
   border-radius: 4%;
 }
 
@@ -43,9 +43,9 @@ body,
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  margin: 1rem auto;
-  height: 60%;
-  width: 84%;
+  margin: auto;
+  height: 40%;
+  width: 80%;
 }
 
 .sub-header {
@@ -56,7 +56,8 @@ body,
 
 .sub-description {
   text-align: center;
-  margin: 2rem;
+  margin-top: -2.3rem;
+  padding: 1rem;
   font-size: 1.5rem;
 }
 
@@ -118,21 +119,15 @@ body,
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .subhead {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
   .subhead {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .subhead {
-    width: 80%;
+    width: 90%;
   }
 }
 
